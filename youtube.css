@@ -1,0 +1,83 @@
+/* EDIT YT TOP BAR */
+
+/*--------------------------------------------------*/
+#container.ytd-searchbox {
+    border-radius:11px 0 0 11px;
+    background-color: #404040d9;
+    border-top: solid 1px #ffffff30;
+    border-bottom: solid 1px #232324;
+    box-shadow: 3 3 10px red;
+}
+
+ytd-searchbox[has-focus] #container.ytd-searchbox{    
+    border: solid 1px transparent;
+    background-color: #232324;
+    border-bottom: solid 1px #ffffff30; 
+}
+
+#search-icon-legacy.ytd-searchbox:hover{
+    background-color: #232324;
+    border-bottom: solid 1px #ffffff30;
+}
+
+#search-icon-legacy.ytd-searchbox{
+    border-radius: 0 11px 11px 0;
+    background-color: #404040d9;
+    border-top: solid 1px #ffffff30;
+    border-bottom: solid 1px #232324;
+}
+
+#container.ytd-masthead{
+    background-color: #323234;  
+}
+/*--------------------------------------------------*/
+
+
+
+
+
+/*--------------------------------------------------*/
+
+
+
+#guide-section-title.ytd-guide-section-renderer{
+    color: #F25252;
+}
+app-drawer{
+    visibility: hidden;
+}
+
+html:not(.style-scope)[dark], :not(.style-scope)[dark]{
+    --yt-spec-brand-background-solid: #232324;
+}
+
+
+element{
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif !important;
+}
+
+
+/* EDIT YT THUMBNAIL */
+ytd-thumbnail.ytd-rich-grid-video-renderer::before{
+    background-color: transparent;
+}
+
+ytd-thumbnail #thumbnail.ytd-thumbnail{
+    border-radius: 20px;
+    box-shadow: 0 0 30px black;
+    filter: brightness(70%);
+    
+}
+ytd-thumbnail #thumbnail.ytd-thumbnail:hover{
+    
+    filter: brightness(100%);
+}
+
+
+/* REMOVE THE COVID BANNER*/
+ytd-clarification-renderer{
+    background:none;
+}
+a.ytd-clarification-renderer{
+    display:none;
+}
